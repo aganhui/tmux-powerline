@@ -8,7 +8,7 @@ if [ -z "$TMUX_POWERLINE_RCFILE" ]; then
 	if [ -e "${XDG_CONFIG_HOME:-$HOME/.config}/tmux-powerline/config.sh" ]; then
 		export TMUX_POWERLINE_RCFILE="${XDG_CONFIG_HOME:-$HOME/.config}/tmux-powerline/config.sh"
 	else
-		export TMUX_POWERLINE_RCFILE="$HOME/.tmux-powerlinerc"
+		export TMUX_POWERLINE_RCFILE="${TMUX_POWERLINE_DIR_HOME}/.tmux-powerlinerc"
 	fi
 fi
 export TMUX_POWERLINE_RCFILE_DEFAULT="${TMUX_POWERLINE_RCFILE}.default"
